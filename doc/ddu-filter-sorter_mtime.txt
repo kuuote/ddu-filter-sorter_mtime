@@ -1,0 +1,36 @@
+*ddu-filter-sorter_mtime* sort by modified time for ddu.vim
+
+Author: kuuote
+License: zlib
+
+==============================================================================
+INTRODUCTION                            *ddu-filter-sorter_mtime-introduction*
+
+This sorter sorts file kind items by modified time.
+
+==============================================================================
+INSTALL		*ddu-filter-sorter_mtime-install*
+
+Please install |ddu|, |ddu-kind-file|, and |denops.vim|
+
+https://github.com/Shougo/ddu.vim
+https://github.com/Shougo/ddu-kind-file
+https://github.com/vim-denops/denops.vim
+
+==============================================================================
+EXAMPLES                                    *ddu-filter-sorter_mtime-examples*
+>
+	call ddu#custom#patch_global(#{
+	    \   sourceOptions: #{
+	    \     : #{
+	    \       sorters: [
+	    \         'sorter_mtime',
+	    \       ],
+	    \     },
+	    \   }
+	    \ })
+<
+
+==============================================================================
+
+vim: ft=help
